@@ -660,9 +660,9 @@ let msgPhase = 'wait';     // 状态机阶段：wait(首条等待) → in(淡入
 let msgStartTm = 0;        // 树长成后的起始时间戳
 
 // 消息速度配置（毫秒）—— 越小越快
-const MSG_FADE_IN = 800;   // 淡入时长：0.3秒，快速出现
-const MSG_HOLD = 2000;     // 停留时长：2秒，读完即可
-const MSG_FADE_OUT = 500;  // 淡出时长：0.35秒，快速消失，下一条立刻接上
+const MSG_FADE_IN = 300;   // 淡入时长：0.3秒，快速出现
+const MSG_HOLD = 100;     // 停留时长：1秒，读完即可
+const MSG_FADE_OUT = 350;  // 淡出时长：0.35秒，快速消失，下一条立刻接上
 
 function updateMessages(now, elapsed, grown) {
   if (!grown) return;
